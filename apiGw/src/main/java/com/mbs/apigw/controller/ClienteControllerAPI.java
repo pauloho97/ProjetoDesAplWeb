@@ -15,7 +15,7 @@ import com.mbs.apigw.comunicacao.ClienteServiceRoteamento;
 import com.mbs.clienteServices.entidades.Cliente;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:9005")
+@CrossOrigin(origins = "http://localhost:9002")
 public class ClienteControllerAPI {
 	
 	@Autowired
@@ -44,5 +44,7 @@ public class ClienteControllerAPI {
 		System.out.println("Processando roteamento deletar ");
 		return clienteServiceRoteamento.deletar(id);
 	}
+	
+	
 	
 }

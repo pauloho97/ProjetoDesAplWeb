@@ -20,7 +20,7 @@ import com.mbs.vendasServices.entidades.Venda;
 import ch.qos.logback.core.status.Status;
 
 
-@CrossOrigin(origins = "http://localhost:9002")
+@CrossOrigin(origins = "http://localhost:9005")
 @RestController
 public class VendasControllerAPI {
 	

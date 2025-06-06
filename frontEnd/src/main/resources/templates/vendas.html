@@ -24,8 +24,12 @@
       <td>Quantidade:</td>
       <td><input type="text" id="quantidade" size="50"><br></td>
     </tr>
+	<tr>
+	      <td>Email:</td>
+	      <td><input type="text" id="email" size="50"><br></td>
+	    </tr>
   </table> 
-  <button onclick="criarCliente()">Adicionar</button>
+  <button onclick="criarVenda()">Adicionar</button>
 
   <h3>Maior Venda</h3>
   <div id="maiorVenda">Carregando...</div>
@@ -42,7 +46,7 @@
 const urlAPI = "http://localhost:9000/v1/processarVenda";
 
 // Função para criar uma nova venda
-async function criarCliente() {
+async function criarVenda() {
   const precoProduto = document.getElementById("precoProduto").value;
   const nomeProduto = document.getElementById("nomeProduto").value;
   const quantidade = document.getElementById("quantidade").value;
